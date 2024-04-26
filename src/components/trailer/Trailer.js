@@ -1,10 +1,10 @@
-import { userParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ReactPlayer } from "react-player";
 import "./Trailer.css"
 
 const Trailer = () => {
 
-    let params = userParams();
+    let params = useParams();
     let key = params.ytTrailerId;
 
     return (
