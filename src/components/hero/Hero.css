@@ -1,0 +1,23 @@
+.movie-carousel-movie{
+    width: 100vw;
+    background-color: black;
+}
+
+.movie-poster{
+    height: 300px;
+}
+
+.movie-poster > img{
+    height: 100%;
+    width: 100%;
+}
+
+.movie-card-container{
+    height: 550px;
+    background-color: black;
+}
+
+.movie-card{
+    background-repeat: no-repeat;
+}
+
