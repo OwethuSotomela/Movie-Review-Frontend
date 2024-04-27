@@ -8,6 +8,7 @@ import Home from './components/home/Home';
 import Header from './components/header/Header';
 import Trailer from './components/trailer/Trailer';
 import NotFound from './components/notFound/NotFound';
+import Reviews from './components/Reviews';
 
 function App() {
 
