@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
-import { useParams, userParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 import api from "../../api/axiosConfig";
-import ReviewForm from "../reviewForm/reviewForm";
+import ReviewForm from "../reviewForm/ReviewForm";
 
 const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 
@@ -13,7 +13,7 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 
     useEffect(() => {
         getMovieData(movieId);
-    }, []);
+    }, [getMovieData, movieId]);
 
     const addReview = async (e) => {
 
@@ -43,7 +43,7 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
             </Row>
             <Row className="mt-2">
                 <Col>
-                    <img src={movie?.poster} col="" />
+                    <img src={movie?.poster} col="" alt="" />
                 </Col>
                 <Col>
                     {
